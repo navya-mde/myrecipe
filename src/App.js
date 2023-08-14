@@ -4,7 +4,7 @@ import './App.css';
 import Recipe from './Recipe';
 
 const App = () => {
-  const APP_ID = '2976c6d2'; // Make sure to wrap your IDs and keys in quotes
+  const APP_ID = '2976c6d2'; 
   const APP_KEY = 'c5df84d4ef63126de4d73a9ae785ac87';
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
