@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Recipe from './Recipe';
+import script from './script';
 
 const App = () => {
   const APP_ID = '2976c6d2'; 
