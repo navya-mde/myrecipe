@@ -2,7 +2,21 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Recipe from './Recipe';
-import script from './script';
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Home from "./pages/Home";
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </div>
+  );
+}
+
 
 const App = () => {
   const APP_ID = '2976c6d2'; 
@@ -62,6 +76,8 @@ const App = () => {
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients}
           />
+
+          
         ))}
       </div>
     </div>
